@@ -7,25 +7,7 @@
     <title>Document</title>
 
     <style>
-        .navbar{
-            display: grid;
-            grid-template-columns: 30% 70%;
-            height: 15%;
-            align-items: center;
-        }
-
-        .logo{
-            height: 50px;
-        }
-        .menu{
-            height: 75%;
-            display: grid;
-            grid-template-columns: repeat(5,1fr);
-        }
-        img{
-            width: 20%;
-            height: 80%;
-        }
+        
 
         .content-area{
             display: grid;
@@ -55,28 +37,7 @@
             align-items: center;
         }
 
-        footer{
-            display: flex;
-            justify-content: center;
-            background-color: antiquewhite;
-            border-color:  antiquewhite;
-            border-radius: 2px;
-        }
-
-        a{
-            text-decoration: none;
-            color:black;
-            font-weight: bold;
-        }
-
-        a:hover{
-            text-decoration: underline;
-            cursor:default;
-        }
-
-        a:visited{
-            text-decoration: underline;
-        }
+        
 
     </style>
 
@@ -84,18 +45,9 @@
 <body>
     <div class="container">
 
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo.jpeg" alt="IIITDM LOGO">
-            </div>
-            <div class="menu">
-                <div class="menu-items"><a href="home.html">Home</a></div>
-                <div class="menu-items"><a href="account.html">Account</a></div>
-                <div class="menu-items"><a href="courses.html">Courses</a></div>
-                <div class="menu-items"><a href="clubs.html">Clubs</a></div>
-                <div class="menu-items"><a href="to-do.html">To-Do</a></div>
-            </div>
-        </div>
+        <?php 
+            require 'navbar.php';
+        ?>
 
         <div class="content-area">
             <div class="cover-image">
@@ -114,10 +66,10 @@
                 </div>
             </div>
         </div>
-
-        <footer>
-            All Rights Reserved IIITDM Jabalpur
-        </footer>
+        <?php 
+            require 'footer.php';
+        ?>
+        
     </div>
 </body>
 </html>
