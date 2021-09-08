@@ -52,7 +52,7 @@
                 <img src="images/logo.jpeg" alt="IIITDM LOGO">
             </div>
             <div class="menu">
-                <div class="menu-items"><a href="home.html">Home</a></div>
+                <div class="menu-items"><a href="home-page.php">Home</a></div>
                 <div class="menu-items"><a href="account.html">Account</a></div>
                 <div class="menu-items"><a href="courses.html">Courses</a></div>
                 <div class="menu-items"><a href="clubs.html">Clubs</a></div>
