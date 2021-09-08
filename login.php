@@ -66,9 +66,9 @@
             </div>
 
         <div class="login-form">
-        <form action="authentication.php"  method="POST">
-            <p><input type="email" placeholder="Email"></p>
-            <p><input type="password" placeholder="Password"></p>
+        <form action="home-page.php"  method="POST">
+            <p><input type="email" placeholder="Email" required></p>
+            <p><input type="password" placeholder="Password" required></p>
             <p><input type="submit" value="Log In"></p>
         </form>
         </div>
