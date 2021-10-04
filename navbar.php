@@ -8,7 +8,7 @@
     <style>
         .navbar{
             display: grid;
-            grid-template-columns: 10% 10% 10% 10% 10% 50%;
+            grid-template-columns: 10% 10% 5% 5% 10% 60%;
             height: 15%;
             align-items: center;
         }
@@ -40,9 +40,34 @@
             cursor:default;
         }
 
-        a:visited{
-            text-decoration: underline;
+        a:active{
+           color:blue;
         }
+
+        .dropdown{
+            position: relative;
+        }
+
+        .drop-content{
+            position: absolute;
+            display: none;
+        }
+
+        .drop-content > div{
+            border-radius: 2px;
+        }
+
+        .dropdown:hover .drop-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f4f4f4;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        
     </style>
 </head>
 <body>
@@ -54,7 +79,19 @@
             <div class="menu">
                 <div class="menu-items"><a href="home-page.php">Home</a></div>
                 <div class="menu-items"><a href="account.html">Account</a></div>
-                <div class="menu-items"><a href="courses.html">Courses</a></div>
+                
+
+
+                <div class="menu-items dropdown">
+                <a href="#">Courses</a>
+                <div class="drop-content">
+                    <div class="content"><a href="courses.php">Courses</a></div>
+                    <div class="content"><a href="register_courses.php">Register</a></div>
+                </div>
+                </div>
+
+
+
                 <div class="menu-items"><a href="clubs.html">Clubs</a></div>
                 <div class="menu-items"><a href="to-do.html">To-Do</a></div>
             </div>
