@@ -46,8 +46,6 @@
                 <button type="submit" value="Log in" id="btn">Log in</button>
             </div>
 
-            <hr>
-
         </div>
     </form>
 </body>
