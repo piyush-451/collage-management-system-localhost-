@@ -1,84 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-
-        body{
-            display:flex;
-            justify-content: center;
-            height: 90vh;
-        }
-        .container{
-            display: grid;
-            width: 500px;
-            height: 90%;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(3,1fr);
-        }
-
-        .header{
-            grid-column: 2/4;
-            grid-row: 1/2;
-        }
-
-        .login-form{
-            grid-row: 2/3;
-            grid-column: 2/4;
-        }
-
-        .account-registration{
-            grid-row: 3/4;
-            grid-column: 2/5;
-        }
-
-        img{
-            width: 100%;
-        }
-
-        input{
-            width: 90%;
-            padding: 8px;
-            border-radius: 2px;
-            border: 0.5px solid rgba(34, 32, 32, 0.192);
-
-        }
-
-        input[type="submit"]{
-            color: white;
-            background-color: rgba(0, 0, 255, 0.658);
-            border: none;
-        }
-
-        a{
-            text-decoration: none;
-        }
-
-    </style>
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    <div class="container">
-            <div class="header">
-                <img src="images/iitdmj-icon.jpg" alt="IITIDM LOGO">
+    <form action="backend.php" method="POST">
+        <div class="container">
+            <div class="tittle">
+                <div class="logo">
+                    <img src="images/iiitdmj-icon.jpg" alt="logo">
+         
+                    <!-- <h3>Canvas</h3> -->
+                </div>
+                <div>
+                    <li class="decoration"><a href="">Dont't have a account?</a></li>
+                    <li class="decoration"><a href="account-registration.php"> Sign up</a></li>
+                </div>
+
+            </div>
+            <div class="credencial">
+                <div id="Email">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="xyx@abc.com" required>
+                </div>
+                <div id="Password">
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="************" required>
+                </div>
+            </div>
+            <div class="log_in">
+                <div>
+                    <input type="checkbox" name="status" id="stay">
+                    <label for="stay">stay signed in</label>
+                    <!-- <li class="decoration"><a href="#home">Forgot Password?</a></li> -->
+                    <li class="decoration">Welcome to the team</li>
+                </div>
+                <button type="submit" value="Log in" id="btn">Log in</button>
             </div>
 
-        <div class="login-form">
-        <form action="authentication.php"  method="POST">
-            <p><input type="email" placeholder="Email"></p>
-            <p><input type="password" placeholder="Password"></p>
-            <p><input type="submit" value="Log In"></p>
-        </form>
-        </div>
+            <hr>
 
-        <div class="account-registration">
-            <a href="account-registration.php">
-                <p>Need a New Account? <br>
-                Click Here!</p>
-            </a>
         </div>
-    </div>
+    </form>
 </body>
+
 </html>
